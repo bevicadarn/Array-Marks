@@ -8,7 +8,7 @@ public class Results {
 
               BufferedReader textFileReader = null;
 
-                //  check that two arguments have been supplied on the command line
+                //  check that one argument has been supplied on the command line
                 if (args.length != 1) {
                     System.out.println("Results usage: One parameter which must contain the name of the source file only");
                     System.exit(1);
@@ -48,8 +48,6 @@ public class Results {
                                   }
                            }
                      }
-
- 
 
                      // Break line into separate words
                      String[] textArray = outputString.split("\\s+"); // \\s splits by all whitespace chars
@@ -114,7 +112,6 @@ public class Results {
                            System.out.print(markLine);
                      }
 
- 
               } catch (FileNotFoundException ioe) {
                      System.out.println("The file " + args[0] + " could not be opened");
                      System.exit(3);
